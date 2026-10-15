@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Cristian Muñoz</title>
+  <meta name="description" content="Technical and design skills of Cristian David Muñoz Camayo - UI/UX Designer.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glows -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-skills-right" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header class="header-wrapper" id="headerWrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/avatar.png" alt="Cristian Muñoz" class="nav-avatar">
+        <span class="nav-brand-text">Cristian Muñoz</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="skills.html" class="nav-link active">Skills</a>
+        </li>
+        <li class="nav-item nav-dropdown">
+          <a href="portfolio.html" class="nav-link">
+            Portfolio <span class="nav-arrow">&#9662;</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="portfolio.html#all" class="dropdown-item">All Projects</a></li>
+            <li><a href="portfolio.html#eventos" class="dropdown-item">Eventos Premium</a></li>
+            <li><a href="portfolio.html#portal" class="dropdown-item">Mi Portal U</a></li>
+            <li><a href="portfolio.html#acapp" class="dropdown-item">A&amp;C App</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="btn-nav-contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="subpage-hero">
+      <h1 class="subpage-hero-title">Expertise &amp; Capabilities</h1>
+      <p class="subpage-hero-subtitle">Specialized skillsets developed through extensive product design and user research.</p>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section" id="skills" aria-label="Skills & Expertise">
+      <div class="skills-container">
+
+        <div class="skills-header">
+          <div class="dot-grid dot-grid-skills-left" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+
+          <svg class="skills-doodle" width="44" height="26" viewBox="0 0 44 26" fill="none" aria-hidden="true">
+            <path d="M4,20 C10,6 18,3 26,13 C31,19 36,8 41,12" stroke="#8b5cf6" stroke-width="2.2" stroke-linecap="round" fill="none" />
+            <path d="M22,5 L26,1 M34,7 L38,3 M38,15 L43,14" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+
+          <h2 class="skills-title">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Row 1 -->
+          <div class="skill-card" id="figma">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="25.13" />
+              </svg>
+              <span class="donut-value">90%</span>
+            </div>
+            <p class="skill-label">Figma /<br>Adobe XD</p>
+          </div>
+
+          <div class="skill-card" id="ui-ux">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="50.27" />
+              </svg>
+              <span class="donut-value">80%</span>
+            </div>
+            <p class="skill-label">UI Desing</p>
+          </div>
+
+          <div class="skill-card" id="architecture">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="50.27" />
+              </svg>
+              <span class="donut-value">80%</span>
+            </div>
+            <p class="skill-label">Information<br>Architecture</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">UX Desing</p>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Prototyping</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Box Model</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Business Model<br>Canvas</p>
+          </div>
+
+          <div class="skill-card" id="design-systems">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Desing Systems</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="social-links" aria-label="Social links">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+      <p class="footer-copyright">
+        Cristian David Muñoz Camayo @kianmuñoz &copy; 2022
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

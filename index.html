@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Muñoz | UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Cristian David Muñoz Camayo - UI/UX Designer specialized in crafting simple, aesthetically pleasing, and user-centric interfaces.">
+  <meta name="keywords" content="Cristian Muñoz, UI/UX Designer, Figma, Adobe XD, Design Systems, Colombian Designer, Portfolio">
+  <meta name="author" content="Cristian David Muñoz Camayo">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for crisp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================== -->
+  <!-- AMBIENT GLOWS & BACKGROUND ACCENTS             -->
+  <!-- ============================================== -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-hero-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-skills-right" aria-hidden="true"></div>
+
+  <!-- Decorative Dot Grids (Screenshot 1) -->
+  <div class="dot-grid dot-grid-top-right" aria-hidden="true">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- HEADER & FLOATING NAVBAR                       -->
+  <!-- Matches Screenshot 1 Exactly                    -->
+  <!-- CSS-Only Dropdowns via :hover & :focus-within  -->
+  <!-- ============================================== -->
+  <header class="header-wrapper" id="headerWrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Avatar + Name -->
+      <a href="#home" class="nav-brand" aria-label="Cristian Muñoz Home">
+        <img src="assets/avatar.png" alt="Cristian Muñoz" class="nav-avatar">
+        <span class="nav-brand-text">Cristian Muñoz</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+
+        <li class="nav-item nav-dropdown">
+          <a href="#portfolio" class="nav-link">
+            Portfolio <span class="nav-arrow">&#9662;</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#portfolio" class="dropdown-item">All Projects</a></li>
+            <li><a href="#cardEventos" class="dropdown-item">Eventos Premium</a></li>
+            <li><a href="#cardPortal" class="dropdown-item">Mi Portal U</a></li>
+            <li><a href="#cardAcApp" class="dropdown-item">A&amp;C App</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </li>
+      </ul>
+
+      <!-- Navbar Action Button -->
+      <a href="contact.html" class="btn-nav-contact">Contact Me</a>
+
+    </nav>
+  </header>
+
+  <!-- ============================================== -->
+  <!-- MAIN CONTENT CONTAINER                         -->
+  <!-- ============================================== -->
+  <main id="mainContent">
+
+    <!-- -------------------------------------------- -->
+    <!-- 1. HERO SECTION (Screenshot 1)               -->
+    <!-- -------------------------------------------- -->
+    <section class="hero-section" id="home" aria-label="Introduction">
+      <div class="hero-container">
+
+        <!-- Left Column: Copy & CTA -->
+        <div class="hero-text-col">
+          
+          <!-- 3 Decorative Burst Slashes above "am" -->
+          <svg class="burst-icon" width="34" height="22" viewBox="0 0 34 22" fill="none" aria-hidden="true">
+            <path d="M7 19L3 4" stroke="#18192e" stroke-width="2.2" stroke-linecap="round" />
+            <path d="M17 18L17 2" stroke="#18192e" stroke-width="2.2" stroke-linecap="round" />
+            <path d="M26 19L31 4" stroke="#18192e" stroke-width="2.2" stroke-linecap="round" />
+          </svg>
+
+          <!-- Main Greeting -->
+          <h1 class="hero-title">
+            Hi, I am<br>
+            <span class="hero-name-row">
+              Cristian <span class="palette-emoji" role="img" aria-label="Artist palette">🎨</span>
+            </span>
+          </h1>
+
+          <!-- Bio Paragraph -->
+          <p class="hero-description">
+            I am a UI/UX designer, I like to make interfaces simple and aesthetically pleasing for users. The idea is not to create an interface for creating it, it is that users prefer use because your product is easy to use.
+          </p>
+
+          <!-- CTA Group & Curved Arrow -->
+          <div class="hero-cta-wrapper">
+            <a href="contact.html" class="btn-hero-contact" id="btnHeroContact">
+              <span>&iexcl;Contact Me!</span>
+              <span class="play-circle"><i class="fa-solid fa-play"></i></span>
+            </a>
+
+            <!-- Curved Squiggly Arrow pointing towards illustration -->
+            <svg class="hero-arrow" viewBox="0 0 100 70" fill="none" aria-hidden="true">
+              <path d="M6,10 C20,32 38,50 48,46 C58,42 55,22 64,25 C74,28 82,56 94,56" 
+                    stroke="#18192e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M86,48 L95,57 L84,62" 
+                    stroke="#18192e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Hero Illustration Image -->
+        <div class="hero-art-col" aria-label="Cristian UI/UX illustration">
+          <img src="assets/hero-illustration-clean.png" alt="Cristian UI/UX illustration with workspace windows and charts" class="hero-art-img">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------------- -->
+    <!-- 2. SKILLS SECTION (Screenshot 1)             -->
+    <!-- -------------------------------------------- -->
+    <section class="skills-section" id="skills" aria-label="Skills & Expertise">
+      
+      <!-- Side & Bottom Dot Grids -->
+      <div class="dot-grid dot-grid-skills-right" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <div class="dot-grid dot-grid-skills-bottom-left" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <div class="dot-grid dot-grid-skills-bottom-right" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="skills-container">
+
+        <!-- Header with hand-drawn scribble doodle crown -->
+        <div class="skills-header">
+          
+          <!-- Dot grid immediately to the left of Skills -->
+          <div class="dot-grid dot-grid-skills-left" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+
+          <!-- Purple doodle scribble crown & accents -->
+          <svg class="skills-doodle" width="44" height="26" viewBox="0 0 44 26" fill="none" aria-hidden="true">
+            <path d="M4,20 C10,6 18,3 26,13 C31,19 36,8 41,12" stroke="#8b5cf6" stroke-width="2.2" stroke-linecap="round" fill="none" />
+            <path d="M22,5 L26,1 M34,7 L38,3 M38,15 L43,14" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+
+          <h2 class="skills-title">Skills</h2>
+        </div>
+
+        <!-- 8 Donut Gauges in 2 Rows of 4 Columns -->
+        <div class="skills-grid">
+
+          <!-- Row 1, Col 1: 90% Figma / Adobe XD -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="25.13" />
+              </svg>
+              <span class="donut-value">90%</span>
+            </div>
+            <p class="skill-label">Figma /<br>Adobe XD</p>
+          </div>
+
+          <!-- Row 1, Col 2: 80% UI Desing -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="50.27" />
+              </svg>
+              <span class="donut-value">80%</span>
+            </div>
+            <p class="skill-label">UI Desing</p>
+          </div>
+
+          <!-- Row 1, Col 3: 80% Information Architecture -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="50.27" />
+              </svg>
+              <span class="donut-value">80%</span>
+            </div>
+            <p class="skill-label">Information<br>Architecture</p>
+          </div>
+
+          <!-- Row 1, Col 4: 70% UX Desing -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">UX Desing</p>
+          </div>
+
+          <!-- Row 2, Col 1: 70% Prototyping -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Prototyping</p>
+          </div>
+
+          <!-- Row 2, Col 2: 70% Box Model -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Box Model</p>
+          </div>
+
+          <!-- Row 2, Col 3: 70% Business Model Canvas -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Business Model<br>Canvas</p>
+          </div>
+
+          <!-- Row 2, Col 4: 70% Desing Systems -->
+          <div class="skill-card">
+            <div class="donut-wrapper">
+              <svg class="donut-svg" viewBox="0 0 100 100">
+                <circle class="donut-track" cx="50" cy="50" r="40" />
+                <circle class="donut-bar" cx="50" cy="50" r="40" stroke-dasharray="251.33" stroke-dashoffset="75.40" />
+              </svg>
+              <span class="donut-value">70%</span>
+            </div>
+            <p class="skill-label">Desing Systems</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------------- -->
+    <!-- 3. ABOUT ME SECTION (Screenshot 2)           -->
+    <!-- -------------------------------------------- -->
+    <section class="about-section" id="about" aria-label="About Cristian">
+      
+      <!-- Dark Theme White Dot Grids -->
+      <div class="dot-grid-dark dot-grid-about-left" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <div class="dot-grid-dark dot-grid-about-right" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- Accent Hand-Drawn White Slashes on Upper Right -->
+      <svg class="about-slash-accent" width="36" height="24" viewBox="0 0 36 24" fill="none" aria-hidden="true">
+        <path d="M8 22L4 4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        <path d="M18 20L18 2" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        <path d="M28 22L33 4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+      </svg>
+
+      <div class="about-container">
+        
+        <h2 class="about-title">About Me</h2>
+
+        <!-- Stats Container Box with 3 Pillars -->
+        <div class="about-card-wrapper">
+          <div class="about-card">
+            
+            <!-- Pillar 1: 100% Responsibility -->
+            <div class="stat-col">
+              <div class="stat-icon">
+                <svg width="42" height="42" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                  <circle cx="18" cy="14" r="10" fill="#a78bfa" />
+                  <path d="M18 9L19.5 12.5L23.2 13L20.5 15.6L21.2 19.3L18 17.5L14.8 19.3L15.5 15.6L12.8 13L16.5 12.5L18 9Z" fill="white" />
+                  <path d="M13 22L11 31L18 27L25 31L23 22" fill="#a78bfa" />
+                </svg>
+              </div>
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Responsibility</span>
+            </div>
+
+            <!-- Pillar 2: 100% Colombian (Taller Pop-Out Badge) -->
+            <div class="colombian-pillar">
+              <!-- Flag Cap -->
+              <div class="colombian-flag-stripes">
+                <div class="flag-yellow"></div>
+                <div class="flag-blue"></div>
+                <div class="flag-red"></div>
+              </div>
+              <div class="colombian-body">
+                <span class="colombian-stat-number">100%</span>
+                <span class="colombian-stat-label">Colombian</span>
+              </div>
+            </div>
+
+            <!-- Pillar 3: 100% Puntuality -->
+            <div class="stat-col">
+              <div class="stat-icon">
+                <svg width="42" height="42" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                  <rect x="7" y="9" width="22" height="20" rx="5" fill="#a78bfa" />
+                  <rect x="7" y="9" width="22" height="7" rx="3" fill="#8b5cf6" />
+                  <rect x="11" y="6" width="3" height="6" rx="1.5" fill="#c4b5fd" />
+                  <rect x="22" y="6" width="3" height="6" rx="1.5" fill="#c4b5fd" />
+                  <circle cx="23" cy="23" r="7" fill="#8b5cf6" />
+                  <path d="M20 23L22 25L26 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                </svg>
+              </div>
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Puntuality</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Organic Wave Divider transitioning from Dark Navy to Pure White -->
+      <div class="about-wave-wrap" aria-hidden="true">
+        <svg class="about-wave-svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,0 C320,110 980,10 1440,75 L1440,120 L0,120 Z" fill="#ffffff" />
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- -------------------------------------------- -->
+    <!-- 4. PORTFOLIO SECTION (Screenshot 2)          -->
+    <!-- Requirement 5: Pure White #FFFFFF Background -->
+    <!-- -------------------------------------------- -->
+    <section class="portfolio-section" id="portfolio" aria-label="Selected Projects">
+      
+      <!-- Side Dot Grids -->
+      <div class="dot-grid dot-grid-portfolio-left" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <div class="dot-grid dot-grid-portfolio-right" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="portfolio-container">
+
+        <!-- Header with purple squiggly underline -->
+        <div class="portfolio-header">
+          <h2 class="portfolio-title">Portfolio</h2>
+          <svg class="portfolio-doodle" width="85" height="22" viewBox="0 0 85 22" fill="none" aria-hidden="true">
+            <path d="M4,11 C16,19 28,3 42,13 C52,20 66,10 74,6" stroke="#8b5cf6" stroke-width="2.6" stroke-linecap="round" fill="none" />
+            <path d="M22,16 C32,24 45,14 55,18" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" fill="none" />
+          </svg>
+        </div>
+
+        <!-- 3 Project Cards in a Responsive Row -->
+        <div class="portfolio-grid">
+
+          <!-- Project Card 1: Eventos Premium -->
+          <article class="project-card" id="cardEventos">
+            <div class="card-img-wrap">
+              <img src="assets/eventos-preview.png" alt="Eventos Premium web mockup - Experiencias Inolvidables" class="card-preview-img">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Eventos Premium</h3>
+              <p class="card-subtitle">Elegante &bull; Serio &bull; Estatus</p>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Mi Portal U -->
+          <article class="project-card" id="cardPortal">
+            <div class="card-img-wrap">
+              <img src="assets/portal-preview.png" alt="Mi Portal U dashboard interface mockup" class="card-preview-img">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Mi Portal U</h3>
+              <p class="card-subtitle">Amigable &bull; Dashboard &bull; Simple</p>
+            </div>
+          </article>
+
+          <!-- Project Card 3: A&C App -->
+          <article class="project-card" id="cardAcApp">
+            <div class="card-img-wrap">
+              <img src="assets/acapp-preview.png" alt="A&C App luxury e-commerce mobile application mockup" class="card-preview-img">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">A&C App</h3>
+              <p class="card-subtitle">Elegante &bull; Serio &bull; Estatus</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- FOOTER SECTION (Screenshot 2)                  -->
+  <!-- ============================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+
+      <!-- 4 Purple Social Media Icons -->
+      <ul class="social-links" aria-label="Social links">
+        <li>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Exact Copyright Text from Reference Screenshot -->
+      <p class="footer-copyright">
+        Cristian David Muñoz Camayo @kianmuñoz &copy; 2022
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>

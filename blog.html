@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Cristian Muñoz</title>
+  <meta name="description" content="Design articles, UI/UX insights, and design systems analysis by Cristian Muñoz.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glows -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-hero-right" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header class="header-wrapper" id="headerWrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/avatar.png" alt="Cristian Muñoz" class="nav-avatar">
+        <span class="nav-brand-text">Cristian Muñoz</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="skills.html" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item nav-dropdown">
+          <a href="portfolio.html" class="nav-link">
+            Portfolio <span class="nav-arrow">&#9662;</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="portfolio.html#all" class="dropdown-item">All Projects</a></li>
+            <li><a href="portfolio.html#eventos" class="dropdown-item">Eventos Premium</a></li>
+            <li><a href="portfolio.html#portal" class="dropdown-item">Mi Portal U</a></li>
+            <li><a href="portfolio.html#acapp" class="dropdown-item">A&amp;C App</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link active">Blog</a>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="btn-nav-contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <main id="articles">
+    <div class="subpage-hero">
+      <h1 class="subpage-hero-title">Design Thoughts &amp; Insights</h1>
+      <p class="subpage-hero-subtitle">Articles on product design, user ergonomics, and building accessible UI experiences.</p>
+    </div>
+
+    <section class="blog-articles-grid">
+      
+      <article class="blog-card" id="ui-trends">
+        <span class="blog-date">October 2022 &bull; 5 min read</span>
+        <h2 class="blog-title">Why Products Fail When Designers Prioritize Aesthetics Over Usability</h2>
+        <p class="blog-snippet">The core tenet of good design is making interfaces that users prefer because your product is genuinely easy to use, not just pretty to look at.</p>
+      </article>
+
+      <article class="blog-card" id="design-systems">
+        <span class="blog-date">August 2022 &bull; 7 min read</span>
+        <h2 class="blog-title">Architecting Scalable Design Systems in Figma &amp; Box Model</h2>
+        <p class="blog-snippet">Bridging the gap between Figma atomic components, design tokens, and CSS Box Model implementation for scalable web applications.</p>
+      </article>
+
+      <article class="blog-card">
+        <span class="blog-date">June 2022 &bull; 4 min read</span>
+        <h2 class="blog-title">Designing Inclusive University Portals: The Story Behind "Mi Portal U"</h2>
+        <p class="blog-snippet">How iterative user research and structured information architecture simplified academic lives for over 15,000 university students.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <ul class="social-links" aria-label="Social links">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+      <p class="footer-copyright">
+        Cristian David Muñoz Camayo @kianmuñoz &copy; 2022
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
